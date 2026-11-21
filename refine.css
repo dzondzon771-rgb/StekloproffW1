@@ -1,0 +1,97 @@
+/* StekloProff — 2026 typography and interactive car picker refresh. */
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&display=swap');
+:root{--font:'Onest','Segoe UI Variable','Segoe UI',Arial,sans-serif;--ink:#102c43;--dark:#061b30;--lime:#1798d7;--accent:#178fcb}
+body{font-family:var(--font);font-size:15px;line-height:1.55;letter-spacing:-.012em}
+button,input,select,textarea{font-family:var(--font)}
+.header-inner{height:88px}.original-brand-logo{width:219px}
+.desktop-nav a{font-size:13.5px;font-weight:650;letter-spacing:-.015em}.lang{font-size:11px;font-weight:700}
+.btn{font-size:13.5px;font-weight:690;border-radius:13px}.btn-lg{font-size:14px;padding:18px 26px}
+.hero h1{font-size:clamp(48px,4.45vw,69px);letter-spacing:-.06em;line-height:1.12;font-weight:750;max-width:680px}
+.hero-lead{font-size:16px;line-height:1.8;max-width:530px}
+.hero-assurance,.hero-tags{font-size:12px;line-height:1.6}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:.14em}
+.hero-floating strong{font-size:20px;font-weight:690}
+.trust-item strong{font-size:13px;font-weight:710}.trust-item span:not(.trust-icon){font-size:11px}
+.section-heading h2,.advantages h2,.faq-intro h2{letter-spacing:-.052em;line-height:1.14;font-weight:750}
+.section-heading>p,.card-body p,.step-card p,.model-card p,.accordion details p{font-size:14px;line-height:1.7}
+.card-body h3{font-size:21px;font-weight:730;letter-spacing:-.035em}
+.card-top{font-size:10px;font-weight:700}.card-time{font-size:9px}
+.card-body p{min-height:76px}.filter-chip{font-size:13px;font-weight:670;padding:12px 18px}
+.model-card h3{font-weight:720;letter-spacing:-.04em}.model-card p{font-size:13px}.model-link{font-size:13px}
+.step-card h3{font-size:20px;font-weight:720}
+.accordion summary{font-size:15px;font-weight:680}
+.quote-modal{width:min(675px,calc(100% - 24px));max-height:min(94dvh,930px);overflow-y:auto;overflow-x:hidden;scrollbar-width:thin}
+.modal-inner{padding:35px}.modal-head h2{font-size:31px;letter-spacing:-.04em}
+.modal-head p{font-size:13px;line-height:1.6}.quote-modal label,.modal-model-field>label{font-size:12px;font-weight:680;letter-spacing:0}
+.quote-modal input,.quote-modal select,.quote-modal textarea{font-size:14px;padding:14px 15px;min-height:49px;background:#f8fbfd;border-color:#dce9f2;border-radius:12px}
+.quote-modal input:focus,.quote-modal select:focus,.quote-modal textarea:focus{border-color:#168fd1;box-shadow:0 0 0 4px #139bd21c}
+.modal-model-field{min-width:0;display:flex;flex-direction:column;gap:7px}
+.modal-model-field>label{display:block}
+
+.fitment-section{padding:92px 0;background:linear-gradient(180deg,#fff 0%,#f4f9fd 100%)}
+.fitment-shell{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1fr);gap:54px;align-items:center;padding:57px 59px 56px;border-radius:31px;background:radial-gradient(circle at 4% -16%,#1c7196 0%,transparent 42%),linear-gradient(128deg,#09263a 5%,#06192c 76%);position:relative;isolation:isolate;box-shadow:0 28px 74px #103c6020;overflow:visible}
+.fitment-shell:before{content:'';position:absolute;inset:0;border-radius:inherit;border:1px solid #a8dfff3b;pointer-events:none}
+.fitment-shell:after{content:'';position:absolute;left:30%;bottom:0;width:34%;height:70%;background:radial-gradient(ellipse at 80% 90%,#0980d020,transparent 75%);pointer-events:none;z-index:-1}
+.fitment-copy{color:#fff;position:relative;min-width:0}
+.fitment-overline{display:inline-flex;align-items:center;gap:10px;color:#88d5fb;font-size:11px;font-weight:720;letter-spacing:.15em}
+.fitment-overline-mark{display:grid;place-items:center;border:1px solid #69c1f08c;border-radius:50%;width:25px;height:25px;font-size:12px}
+.fitment-copy h2{font-size:clamp(35px,3.85vw,58px);line-height:1.14;letter-spacing:-.057em;font-weight:750;margin:23px 0 18px}
+.fitment-copy h2 em{font-style:normal;color:#75cdfd}
+.fitment-copy>p{font-size:15px;line-height:1.78;max-width:465px;color:#bbd0df;margin:0}
+.fitment-benefits{display:grid;gap:14px;margin-top:35px}
+.fitment-benefits>div{display:flex;align-items:center;gap:11px;font-size:13px;color:#e2edf5;font-weight:590}
+.fitment-check{display:grid;place-items:center;width:23px;height:23px;border:1px solid #5bcbfd66;border-radius:50%;background:#2f96c63b;color:#9cdfff;font-size:13px;font-weight:800;flex-shrink:0}
+.fitment-deco{display:flex;gap:12px;margin-top:54px;color:#acd6e965;font-size:11px;font-weight:720;letter-spacing:.32em}
+.fitment-deco span+span{color:#54cbffb3}
+.fitment-card{position:relative;border:1px solid #deebf2;background:#fff;border-radius:25px;padding:31px 31px 26px;box-shadow:0 18px 55px #001a2d32;z-index:2;min-width:0}
+.fitment-card-head{display:flex;justify-content:space-between;gap:18px;align-items:flex-start;margin-bottom:27px}
+.fitment-card-kicker{font-size:10px;font-weight:800;color:#158fcb;letter-spacing:.13em}
+.fitment-card h3{font-size:25px;line-height:1.22;font-weight:740;letter-spacing:-.045em;margin:8px 0 8px;color:#0d3149}
+.fitment-card-head p{font-size:13px;color:#8197a8;margin:0;line-height:1.5}
+.fitment-card-badge{display:grid;place-items:center;flex:0 0 42px;height:42px;color:#0b92d0;background:linear-gradient(135deg,#e2f5ff,#effafe);border-radius:13px;font-size:23px}
+.fitment-field-grid{display:grid;grid-template-columns:1fr 1fr;column-gap:14px;row-gap:18px}
+.fitment-field{min-width:0;position:relative}
+.fitment-field>label{display:block;margin-bottom:9px;font-size:12px;color:#3e5d73;font-weight:720}
+.input-glass,.model-input-wrap{position:relative;display:flex;align-items:center;min-width:0}
+.fitment-field input,.fitment-field select,.model-input-wrap input{width:100%;min-width:0;min-height:54px;border-radius:13px;border:1px solid #dce9f2;background:#f8fbfe;color:#15384d;outline:0;padding:15px 42px 15px 15px;font-size:14px;font-weight:600;transition:background .2s,border-color .2s,box-shadow .2s}
+.fitment-field input::placeholder,.model-input-wrap input::placeholder{color:#94aabd;font-weight:450}
+.fitment-field input:focus,.fitment-field select:focus,.model-input-wrap input:focus{background:#fff;border-color:#40aadd;box-shadow:0 0 0 4px #41b6ed21}
+.fitment-field select{appearance:none;cursor:pointer}
+.input-suffix{position:absolute;right:15px;top:50%;transform:translateY(-50%);font-size:18px;font-weight:600;color:#5599b9;pointer-events:none}
+.fitment-inline-help{font-size:11.5px;color:#7d96a8;line-height:1.45;margin:14px 0 20px}
+.fitment-submit{width:100%;display:flex;align-items:center;justify-content:space-between;gap:15px;min-height:56px;border:0;background:linear-gradient(110deg,#0c85c5,#1eaaea);border-radius:13px;padding:11px 12px 11px 19px;color:#fff;font-size:14px;font-weight:740;box-shadow:0 12px 25px #1595d433;transition:transform .2s,box-shadow .2s,filter .2s;cursor:pointer}
+.fitment-submit:hover{transform:translateY(-2px);filter:brightness(1.04);box-shadow:0 15px 30px #1595d44b}
+.fitment-submit-icon{width:36px;height:36px;display:grid;place-items:center;border-radius:10px;background:#ffffff2b;font-size:22px;transition:transform .2s}
+.fitment-submit:hover .fitment-submit-icon{transform:translate(2px,-2px)}
+.fitment-privacy{font-size:11px;color:#8c9ca7;text-align:center;margin:12px 0 0;line-height:1.45}
+
+/* Accessible searchable model dropdown — contained, scrollable, readable. */
+.model-combo{position:relative;min-width:0;z-index:auto}
+.model-combo:has(.model-options-panel:not([hidden])){z-index:30}
+.model-input-wrap input{padding-right:49px}
+.model-dropdown-trigger{position:absolute;right:6px;top:50%;transform:translateY(-50%);height:39px;width:37px;display:grid;place-items:center;border:0;background:transparent;border-radius:9px;color:#428baa;cursor:pointer}
+.model-dropdown-trigger:hover{background:#e7f4fc;color:#087db8}
+.model-dropdown-trigger svg{width:18px;height:18px;transition:transform .25s}
+.model-combo.is-open .model-dropdown-trigger svg{transform:rotate(180deg)}
+.model-options-panel{position:absolute;top:calc(100% + 9px);left:0;right:0;min-width:255px;z-index:80;max-height:295px;overflow-y:auto;overscroll-behavior:contain;background:#fff;border:1px solid #d6e7f2;border-radius:16px;padding:7px;box-shadow:0 22px 60px #0c34463d;scrollbar-width:thin;scrollbar-color:#b5d9ec transparent;animation:comboAppear .18s ease-out}
+.model-options-panel[hidden]{display:none!important}
+.model-options-title{padding:10px 12px 9px;display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:10px;font-weight:740;letter-spacing:.045em;color:#789aaf;border-bottom:1px solid #ecf2f7;margin-bottom:4px;position:sticky;top:-7px;background:#fff;z-index:2}
+.model-options-count{color:#1687bc;font-size:11px;letter-spacing:0}
+.model-option{display:flex;width:100%;justify-content:space-between;align-items:center;gap:12px;border:0;background:transparent;border-radius:10px;padding:11px 12px;color:#193a50;font:620 13.5px/1.35 var(--font);cursor:pointer;text-align:left;transition:background .12s,color .12s}
+.model-option:hover,.model-option.is-highlighted{background:#e8f5fc;color:#086fa6}
+.model-option[aria-selected="true"]{background:#d6effc;color:#056e9c}
+.model-option .model-option-arrow{opacity:.45;font-size:15px;font-weight:400}
+.model-empty{padding:15px 12px;font-size:12.5px;color:#7890a3;line-height:1.5}
+.modal-model-field .model-input-wrap input{background:#f8fbfd;min-height:49px}
+.modal-model-field .model-options-panel{max-height:min(285px,43vh)}
+@keyframes comboAppear{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:1180px){.fitment-shell{padding:48px 42px;gap:35px}.fitment-card{padding:26px 25px 23px}.fitment-copy h2{font-size:clamp(35px,4vw,51px)}}
+@media(max-width:960px){.fitment-shell{grid-template-columns:1fr;gap:30px;padding:37px}.fitment-copy>p{max-width:640px}.fitment-benefits{grid-template-columns:repeat(3,1fr);gap:14px;margin-top:25px}.fitment-benefits>div{align-items:flex-start;font-size:12px}.fitment-deco{display:none}.fitment-card{max-width:none}}
+@media(max-width:760px){.fitment-section{padding:64px 0}.fitment-shell{padding:30px 20px;border-radius:24px;gap:30px}.fitment-copy h2{font-size:clamp(35px,8vw,48px)}.fitment-copy>p{font-size:14px}.fitment-benefits{grid-template-columns:1fr;gap:10px}.fitment-benefits>div{font-size:13px}.fitment-card{border-radius:18px;padding:24px 20px}.hero h1{font-size:clamp(40px,10.5vw,59px);line-height:1.14;letter-spacing:-.05em}.hero-lead{font-size:14px}.section-heading>p{font-size:14px}.card-body p{font-size:13px;min-height:90px}}
+@media(max-width:520px){.fitment-field-grid{grid-template-columns:1fr}.fitment-copy h2{font-size:37px}.fitment-field-grid{row-gap:13px}.fitment-shell{padding:25px 15px}.fitment-card{padding:23px 17px}.fitment-card h3{font-size:23px}.fitment-field input,.fitment-field select,.model-input-wrap input{min-height:52px;font-size:14px}.model-options-panel{max-height:min(255px,40dvh);min-width:0}.form-row{grid-template-columns:1fr}.modal-inner{padding:24px 20px}.quote-modal{max-height:92dvh}.fitment-benefits{gap:9px}.hero h1{font-size:clamp(39px,11.2vw,51px)}.card-body p{min-height:auto}.section-heading h2,.advantages h2,.faq-intro h2{letter-spacing:-.04em}}
+@media(prefers-reduced-motion:reduce){.model-options-panel{animation:none}.model-dropdown-trigger svg{transition:none}}
+
+/* Keep long menus readable near the bottom of mobile screens. */
+.model-options-panel{max-height:min(295px,var(--model-panel-max,295px))}
+.model-combo.opens-up .model-options-panel{top:auto;bottom:calc(100% + 9px)}
+.modal-model-field .model-options-panel{max-height:min(285px,var(--model-panel-max,43vh))}
